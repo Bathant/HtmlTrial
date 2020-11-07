@@ -16,22 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHT-Wj-Bjs" customClass="DTAttributedTextContentView">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K63-vM-3Nm">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VHT-Wj-Bjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FMB-fr-gU6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VHT-Wj-Bjs" secondAttribute="trailing" id="UIw-10-oaI"/>
-                            <constraint firstItem="VHT-Wj-Bjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ULE-Gl-xc8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VHT-Wj-Bjs" secondAttribute="bottom" id="eE9-yJ-8XK"/>
+                            <constraint firstItem="K63-vM-3Nm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="McS-Bz-hzZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K63-vM-3Nm" secondAttribute="trailing" id="Qnt-UQ-C3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K63-vM-3Nm" secondAttribute="bottom" id="fBN-32-tnI"/>
+                            <constraint firstItem="K63-vM-3Nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBJ-cq-NDD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="VHT-Wj-Bjs" id="M4G-r1-xRf"/>
+                        <outlet property="label" destination="K63-vM-3Nm" id="F7O-67-Iv7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,9 +43,6 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
